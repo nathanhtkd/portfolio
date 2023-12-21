@@ -10,7 +10,7 @@ import Contact from './components/Contact';
 
 export default function App() {
     return (
-        <main className="text-gray-400 bg-cover bg-gray-800 body-font">
+        <main className="h-screen text-gray-400 bg-gray-800 body-font">
             <Navbar />
             <About />
             <Projects />
