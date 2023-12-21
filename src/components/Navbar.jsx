@@ -1,44 +1,66 @@
-// src/components/Navbar.js
-import { ArrowRightIcon } from '@heroicons/react/24/outline';
+import { useState } from 'react';
+import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline';
 import N from '../images/N.png';
-/**
- * Global navbar
- */
 
 export default function Navbar() {
+    const [isNavOpen, setIsNavOpen] = useState(false);
+
     return (
         <header className="bg-gray-800 md:sticky top-0 z-10">
-            <div className="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
-                <p className="font-semibold text-white mb-4 md:mb-0">
-                    <a href="#hero" className="ml-3 text-2xl">
-                        Nathan Hartojo
-                    </a>
-                </p>
-                <img
-                    className="lg:w-10 lg:h-10 w-6 h-6 ml-3"
-                    src={N}
-                    alt="N logo"
-                />
-                <nav className="md:mr-auto md:ml-4 md:py-1 md:pl-4 md:border-l md:border-gray-700 flex flex-wrap items-center text-base justify-center">
-                    <a href="#about" className="mr-5 hover:text-white">
+            <div className="container mx-auto flex flex-wrap p-5 justify-between md:flex-row items-center">
+                <div className="flex items-center">
+                    <img
+                        className="lg:w-10 lg:h-10 w-6 h-6"
+                        src={N}
+                        alt="N logo"
+                    />
+                    <p className="font-semibold text-white md:mb-0 ml-3">
+                        <a href="#hero" className="text-2xl">
+                            Nathan Hartojo
+                        </a>
+                    </p>
+                </div>
+
+                <div className="md:hidden">
+                    <button onClick={() => setIsNavOpen(!isNavOpen)}>
+                        {isNavOpen ? (
+                            <XMarkIcon className="w-8 h-8 mb-[-8px]" />
+                        ) : (
+                            <Bars3Icon className="w-8 h-8 mb-[-8px]" />
+                        )}
+                    </button>
+                </div>
+
+                <nav
+                    className={`${
+                        isNavOpen ? 'flex' : 'hidden'
+                    } md:flex flex-col md:flex-row md:mr-auto md:ml-4 md:py-1 md:pl-4 md:border-l md:border-gray-700 items-center text-base justify-center`}>
+                    <a
+                        href="#about"
+                        className="hover:text-white block py-2 md:py-0 md:mr-5">
                         About Me
                     </a>
-                    <a href="#projects" className="mr-5 hover:text-white">
+                    <a
+                        href="#projects"
+                        className="hover:text-white block py-2 md:py-0 md:mr-5">
                         Projects
                     </a>
-                    <a href="#skills" className="mr-5 hover:text-white">
+                    <a
+                        href="#skills"
+                        className="hover:text-white block py-2 md:py-0 md:mr-5">
                         Skills
                     </a>
-                    <a href="#Certifications" className="mr-5 hover:text-white">
+                    <a
+                        href="#certifications"
+                        className="hover:text-white block py-2 md:py-0 md:mr-5">
                         Certifications
                     </a>
+                    <a
+                        href="#contact"
+                        className="hover:text-white block py-2 md:py-0 md:mr-5">
+                        Contact Me
+                    </a>
                 </nav>
-                <a
-                    href="#contact"
-                    className="inline-flex items-center bg-gray-800 border-0 py-1 px-3 focus:outline-none hover:bg-gray-700 rounded text-base mt-4 md:mt-0">
-                    Contact Me
-                    <ArrowRightIcon className="w-4 h-4 ml-1" />
-                </a>
             </div>
         </header>
     );
