@@ -45,7 +45,9 @@
     ]
   },
   "devDependencies": {
-    "gh-pages": "^6.1.0"
+    "gh-pages": "^6.1.0",
+    "postcss-flexbugs-fixes": "^5.0.2",
+    "postcss-preset-env": "^9.3.0"
   },
   "homepage": "http://nathanhtkd.github.io/my-portfolio"
 }
