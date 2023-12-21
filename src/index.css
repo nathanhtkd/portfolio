@@ -1,6 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@import url('https://fonts.googleapis.com/css?family=Nunito:400,700&display=swap');
 
 @keyframes tada {
     0% {
@@ -28,4 +29,8 @@
 
 .icon-hover-tada:hover {
     animation: tada 1s ease;
+}
+
+body {
+    font-family: 'IBM Plex Mono', monospace;
 }
