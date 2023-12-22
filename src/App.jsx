@@ -11,7 +11,7 @@ import Contact from './components/Contact';
 
 export default function App() {
     return (
-        <main className="h-screen text-gray-400 bg-gray-800 body-font">
+        <main className=" text-gray-400 bg-gray-800 body-font">
             <Navbar />
             <Hero />
             <About />

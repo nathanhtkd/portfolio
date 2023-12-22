@@ -7,7 +7,7 @@ import { FaInstagram, FaLinkedin, FaGithub, FaFacebook } from 'react-icons/fa';
 
 export default function Hero() {
     return (
-        <section id="about" className="bg-heroImage bg-cover">
+        <section id="hero" className="bg-heroImage bg-cover">
             <div style={{ backgroundColor: 'rgba(0, 0, 0, .7)' }}>
                 <div className="container mx-auto flex px-10 py-20 md:flex-row flex-col items-center">
                     <div className="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-6 md:mb-16 md:mb-0 items-center text-center">
