@@ -2,43 +2,37 @@ export const projects = [
     {
         title: 'TAMU Amateur Radio Club Inventory System',
         subtitle: 'Ruby on Rails',
-        description:
-            'Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium dolore rerum laborum iure enim sint nemo omnis voluptate exercitationem eius?',
+        description: 'In development!',
         link: '/',
     },
     {
         title: 'hiFive!',
         subtitle: 'Flutter + Firebase',
-        description:
-            'Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium dolore rerum laborum iure enim sint nemo omnis voluptate exercitationem eius?',
+        description: 'In development!',
         link: '/',
     },
     {
-        title: 'Dynamic LiDAR-Based Human Tracking and Path Prediction System',
+        title: 'Dynamic LiDAR Human Tracking/Prediction System',
         subtitle: 'Python + ros2',
-        description:
-            'Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium dolore rerum laborum iure enim sint nemo omnis voluptate exercitationem eius?',
+        description: 'In development!',
         link: '/',
     },
     {
         title: 'Social Media Post Approval Model for Marky.ai',
         subtitle: 'Python',
-        description:
-            'Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium dolore rerum laborum iure enim sint nemo omnis voluptate exercitationem eius?',
+        description: 'In development!',
         link: '/',
     },
     {
         title: 'NFT Marketplace Backend',
         subtitle: 'Solidity + Hardhat',
-        description:
-            'Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium dolore rerum laborum iure enim sint nemo omnis voluptate exercitationem eius?',
+        description: 'In development!',
         link: '/',
     },
     {
         title: 'Panda Express POS Web Application',
         subtitle: 'HTMl/CSS + Node.js + Express.js',
-        description:
-            'Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium dolore rerum laborum iure enim sint nemo omnis voluptate exercitationem eius?',
+        description: 'In development!',
         link: '/',
     },
 ];
