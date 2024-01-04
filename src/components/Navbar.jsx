@@ -50,11 +50,11 @@ export default function Navbar() {
                         className="hover:text-white block py-2 md:py-0 md:mr-5">
                         Skills
                     </a>
-                    <a
+                    {/* <a
                         href="#certifications"
                         className="hover:text-white block py-2 md:py-0 md:mr-5">
                         Certifications
-                    </a>
+                    </a> */}
                     <a
                         href="#contact"
                         className="hover:text-white block py-2 md:py-0 md:mr-5">

@@ -7,7 +7,7 @@ import About from './components/About';
 // import ImageGallery from 'react-image-gallery';
 import Projects from './components/Projects';
 import Skills from './components/Skills';
-import Certifications from './components/Certifications';
+// import Certifications from './components/Certifications';
 import Contact from './components/Contact';
 
 export default function App() {
@@ -18,7 +18,7 @@ export default function App() {
             <About />
             <Projects />
             <Skills />
-            <Certifications />
+            {/* <Certifications /> */}
             <Contact />
         </main>
     );
