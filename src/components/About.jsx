@@ -17,31 +17,31 @@ export default function About() {
                 </div>
 
                 <div className="lg:flex-grow md:w-1/2 lg:pl-24 md:pl-16 flex flex-col items-center md:items-start text-center md:text-left">
-                    <h1 className="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900 flex items-center justify-center md:justify-start">
+                    <h1 className="title-font sm:text-4xl text-xl mb-4 font-medium text-gray-900 flex items-center justify-center md:justify-start">
                         <ArrowLeftIcon className="w-6 h-6 mr-2 hidden md:block" />
                         <ArrowUpIcon className="w-6 h-6 mr-2 md:hidden" />
                         That's me!
                     </h1>
-                    <p className="mb-4 leading-relaxed">
+                    <p className="text-xs mb-4 leading-relaxed">
                         Currently working as a Frontend Intern at TGI Friday's
                         Digital Team 🥔. Gaining hands-on experience with Data
-                        Analysis, Web Development, Cross-team Collaboration,
-                        Search Engine Optimization (SEO), and more! I'm always
-                        on the lookout for new opportunities in Software
-                        Engineering – if you have an exciting project or role in
-                        mind, feel free to get in touch!
+                        Analysis, Web Development, Search Engine Optimization
+                        (SEO), and more! I'm always on the lookout for new
+                        opportunities in Software Engineering – if you have an
+                        exciting project or role in mind, feel free to get in
+                        touch!
                     </p>
-                    <p className="mb-8 leading-relaxed">
+                    <p className="text-xs mb-8 leading-relaxed">
                         At Texas A&M, I've been actively involved in hackathons
                         and various student organizations, including the
                         Phillipine Student Organization (Philsa)☀️, Aggie Coding
                         Club 💻, and the Texas A&M Blockchain Club⚡, fueling my
                         passion for technology and community.
                     </p>
-                    <h2 className="text-2xl font-semibold mb-3">
+                    <h2 className="text-xl font-semibold mb-3">
                         What I'm Up To
                     </h2>
-                    <p className="mb-8">
+                    <p className="text-xs mb-8">
                         When I'm not coding, you can find me exploring new
                         cultures, dancing, or trying out different world
                         cuisines 🍔. I love traveling ✈️ – it's always exciting
