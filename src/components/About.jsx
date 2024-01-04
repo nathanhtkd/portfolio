@@ -41,7 +41,7 @@ export default function About() {
                     <h2 className="text-xl font-semibold mb-3">
                         What I'm Up To
                     </h2>
-                    <p className="text-xs mb-8">
+                    <p className="text-xs mb-8 leading-relaxed">
                         When I'm not coding, you can find me exploring new
                         cultures, dancing, or trying out different world
                         cuisines 🍔. I love traveling ✈️ – it's always exciting
