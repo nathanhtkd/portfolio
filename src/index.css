@@ -2,6 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 @import url('https://fonts.googleapis.com/css?family=Nunito:400,700&display=swap');
+@import '~react-image-gallery/styles/css/image-gallery.css';
 
 @keyframes tada {
     0% {

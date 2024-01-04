@@ -4,7 +4,7 @@ import React from 'react';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import About from './components/About';
-import Carousel from './components/Carousel';
+// import ImageGallery from 'react-image-gallery';
 import Projects from './components/Projects';
 import Skills from './components/Skills';
 import Certifications from './components/Certifications';
@@ -16,7 +16,6 @@ export default function App() {
             <Navbar />
             <Hero />
             <About />
-            <Carousel />
             <Projects />
             <Skills />
             <Certifications />
