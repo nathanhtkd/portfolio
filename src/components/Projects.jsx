@@ -1,14 +1,18 @@
 // src/components/Projects.js
+import { useState } from 'react';
 import { CodeBracketIcon } from '@heroicons/react/24/solid';
 import { projects } from '../data';
 import w5ac from '../images/tamu-zachry.jpg';
 const images = [w5ac, w5ac, w5ac];
+
 /**
  * Gallery of projects that I've worked on. Includes images, descriptions, and links.
  * Downloadable resume should be available
  */
 
 export default function Projects() {
+    const [selectedProject, setSelectedProject] = useState(null);
+
     return (
         <section id="projects" className="text-gray-400 bg-gray-900 body-font">
             <div className="container px-5 py-10 mx-auto text-center lg:px-40">
@@ -21,31 +25,42 @@ export default function Projects() {
                         In development!
                     </p>
                 </div>
-                <div className="flex flex-wrap -m-4">
-                    {projects.map((project) => (
-                        <a
-                            href={project.link}
-                            key={images[0]}
-                            className="sm:w-1/2 w-100 p-4">
-                            <div className="flex relative">
-                                <img
-                                    alt="tamu amateur radio club logo"
-                                    className="absolute inset-0 w-full h-full object-cover object-center"
-                                    src={images[0]}
-                                />
-                                <div className="px-8 py-10 relative z-10 w-full border-4 border-gray-800 bg-gray-900 opacity-0 hover:opacity-100">
-                                    <h2 className="tracking-widest text-sm title-font font-medium text-green-400 mb-1">
-                                        {project.subtitle}
-                                    </h2>
-                                    <h1 className="title-font text-lg font-medium text-white mb-3">
-                                        {project.title}
-                                    </h1>
-                                    <p className="leading-relaxed">
-                                        {project.description}
-                                    </p>
-                                </div>
+                <div className="grid md:grid-cols-2 gap-6">
+                    {projects.map((project, index) => (
+                        <div
+                            key={index}
+                            onClick={() =>
+                                setSelectedProject(
+                                    selectedProject === index ? null : index,
+                                )
+                            }
+                            className="flex flex-col border-4 border-gray-800 bg-gray-900 hover:opacity-100 hover:scale-105 transition-opacity duration-300 cursor-pointer">
+                            <img
+                                alt={project.title}
+                                className="w-full h-48 object-cover"
+                                src={images[index % images.length]}
+                            />
+                            <div className="p-8">
+                                <h2 className="tracking-widest text-sm title-font font-medium text-green-400 mb-1">
+                                    {project.subtitle}
+                                </h2>
+                                <h1 className="title-font text-lg font-medium text-white mb-3">
+                                    {project.title}
+                                </h1>
+                                <p
+                                    className={`leading-relaxed overflow-hidden ${
+                                        selectedProject === index ? '' : 'h-20'
+                                    }`}>
+                                    {project.description}
+                                </p>
+                                {selectedProject !== index &&
+                                    project.description.length > 100 && (
+                                        <span className="text-green-400">
+                                            ...Read more
+                                        </span>
+                                    )}
                             </div>
-                        </a>
+                        </div>
                     ))}
                 </div>
             </div>

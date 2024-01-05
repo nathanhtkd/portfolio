@@ -20,8 +20,9 @@ export default function Hero() {
                         </h2>
                         <p className="text-sm leading-relaxed sm:w-1 md:w-full ">
                             I'm an aspiring software engineer based in The
-                            Colony, TX. I'm always up for learning something new
-                            or tackling a new set of challenges. Aside from
+                            Colony, TX. Currently a comp-sci student at Texas
+                            A&M University! I'm always up for learning something
+                            new or tackling a new set of challenges. Aside from
                             tech, I like taekwondo 🥋, dancing 🕺, gaming 🎮,
                             reading 📕, and k-pop 🎧.
                         </p>

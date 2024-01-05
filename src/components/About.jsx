@@ -6,8 +6,8 @@ import { ArrowLeftIcon, ArrowUpIcon } from '@heroicons/react/24/solid';
  */
 export default function About() {
     return (
-        <section id="about" className="body-font bg-gray-200 text-gray-800">
-            <div className="container mx-auto flex px-5 py-24 items-center flex-col md:flex-row">
+        <section id="about" className="body-font text-gray-400 bg-gray-900">
+            <div className="container mx-auto flex px-5 py-24 pb-10 items-center flex-col md:flex-row">
                 <div className="lg:max-w-lg lg:w-full md:w-1/2 mb-10 md:mb-0">
                     <img
                         className="object-cover object-center rounded-full ring-[6px] ring-gray-300 dark:ring-gray-500"
@@ -17,7 +17,7 @@ export default function About() {
                 </div>
 
                 <div className="lg:flex-grow md:w-1/2 lg:pl-24 md:pl-16 flex flex-col items-center md:items-start text-center md:text-left">
-                    <h1 className="title-font sm:text-4xl text-xl mb-4 font-medium text-gray-900 flex items-center justify-center md:justify-start">
+                    <h1 className="title-font sm:text-4xl text-xl mb-4 font-medium text-white flex items-center justify-center md:justify-start">
                         <ArrowLeftIcon className="w-6 h-6 mr-2 hidden md:block" />
                         <ArrowUpIcon className="w-6 h-6 mr-2 md:hidden" />
                         That's me!

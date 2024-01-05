@@ -12,7 +12,9 @@ import { skills } from '../data';
 
 export default function Skills() {
     return (
-        <section id="skills" className="text-gray-400 bg-gray-900 body-font">
+        <section
+            id="skills"
+            className="text-gray-400 bg-gray-900 body-font pb-10">
             <div className="container px-5 py-10 mx-auto">
                 <div className="text-center mb-20">
                     <CpuChipIcon className="w-10 inline-block mb-4" />
