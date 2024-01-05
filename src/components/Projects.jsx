@@ -44,12 +44,12 @@ export default function Projects() {
                                 <h2 className="tracking-widest text-sm title-font font-medium text-green-400 mb-1">
                                     {project.subtitle}
                                 </h2>
-                                <h1 className="title-font text-lg font-medium text-white mb-3">
+                                <h1 className="title-font text-md font-medium text-white mb-3">
                                     {project.title}
                                 </h1>
                                 <p
-                                    className={`leading-relaxed overflow-hidden ${
-                                        selectedProject === index ? '' : 'h-20'
+                                    className={`leading-relaxed overflow-hidden text-sm ${
+                                        selectedProject === index ? '' : 'h-16'
                                     }`}>
                                     {project.description}
                                 </p>
