@@ -1,6 +1,7 @@
 // src/components/About.jsx
 import profilePic from '../images/pfp.png';
 import { ArrowLeftIcon, ArrowUpIcon } from '@heroicons/react/24/solid';
+import resume from '../Nathan_Hartojo.pdf';
 /**
  * About me section, pfp, mini blog?
  */
@@ -53,8 +54,10 @@ export default function About() {
 
                     <div className="flex justify-center">
                         <a
-                            href="/resume.pdf"
+                            href={resume}
                             target="_blank"
+                            rel="noreferrer"
+                            download="Nathan_Hartojo.pdf"
                             className="inline-block px-6 py-2 border-2 border-blue-500 text-blue-500 font-bold text-lg leading-tight uppercase rounded hover:bg-blue-500 hover:text-white focus:outline-none focus:ring-0 transition duration-150 ease-in-out animate-pulse">
                             Download Resume
                         </a>
