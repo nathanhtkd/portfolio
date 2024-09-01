@@ -57,7 +57,7 @@ export default function About() {
                             href={resume}
                             target="_blank"
                             rel="noreferrer"
-                            download="Nathan_Hartojo.pdf"
+                            download="Nathan_Hartojo_Resume.pdf"
                             className="inline-block px-6 py-2 border-2 border-blue-500 text-blue-500 font-bold text-lg leading-tight uppercase rounded hover:bg-blue-500 hover:text-white focus:outline-none focus:ring-0 transition duration-150 ease-in-out animate-pulse">
                             Download Resume
                         </a>
