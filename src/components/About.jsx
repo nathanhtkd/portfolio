@@ -1,7 +1,7 @@
 // src/components/About.jsx
 import profilePic from '../images/pfp.png';
 import { ArrowLeftIcon, ArrowUpIcon } from '@heroicons/react/24/solid';
-import resume from '../Nathan_Hartojo.pdf';
+import resume from '../Nathan_Hartojo_Resume.pdf';
 /**
  * About me section, pfp, mini blog?
  */
