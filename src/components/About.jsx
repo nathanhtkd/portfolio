@@ -24,8 +24,14 @@ export default function About() {
                         That's me!
                     </h1>
                     <p className="text-xs mb-4 leading-relaxed">
-                        Currently working as a Frontend Intern at TGI Friday's
-                        Digital Team 🥔. Gaining hands-on experience with Data
+                        Just finished a Software Engineer Internship at Ntrepid!
+                        Worked on an agiile product team and gained experience 
+                        with Vue.js, TypeScript, testing with Jest and JUnit, DevOps
+                        with Jenkins and Docker, and more!
+                    </p>
+                    <p className="text-xs mb-4 leading-relaxed">
+                        Previously worked as a Frontend Intern at TGI Friday's
+                        Digital Team 🥔. Gained hands-on experience with Data
                         Analysis, Web Development, Search Engine Optimization
                         (SEO), and more! I'm always on the lookout for new
                         opportunities in Software Engineering – if you have an
